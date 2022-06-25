@@ -37,3 +37,5 @@ pipeline {
                 sh 'docker rmi Stiff228/my_app1:latest'
             }
         }
+	}
+}
