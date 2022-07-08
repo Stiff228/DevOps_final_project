@@ -5,8 +5,8 @@ from django.http import HttpResponse
 def index(request):
     context = {
         'title': 'Главная страница',
-        'info1': 'Инфо текст 11',
-        'info2': 'Инфо текст 22'
+        'info1': 'Инфо текст Вася228',
+        'info2': 'Инфо текст Нигер228'
 
     }
     return render(request, 'polls/main.html', context=context)
