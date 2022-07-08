@@ -1,2 +1,0 @@
-# DevOps_final_project
-DevOps_online_Kharkiv_2022Q1Q2
