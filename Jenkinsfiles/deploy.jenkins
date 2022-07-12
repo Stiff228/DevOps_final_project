@@ -1,6 +1,5 @@
 #!groovy
 properties([disableConcurrentBuilds()])
-
 pipeline {
     agent { 
         label 'main'
@@ -23,7 +22,6 @@ pipeline {
                 }
             }
         }
-
         stage("clone repo from github") {
             steps {
                 echo " ============== start cloning =================="
@@ -32,7 +30,6 @@ pipeline {
                 }
             }
         }
-
         stage("create docker image") {
             steps {
                 echo " ============== start building image =================="
