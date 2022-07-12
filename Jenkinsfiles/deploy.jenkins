@@ -24,6 +24,15 @@ pipeline {
             }
         }
 
+        stage("clone repo from github") {
+            steps {
+                echo " ============== start cloning =================="
+                dir ('.') {
+                    sh 'git clone https://github.com/Stiff228/DevOps_final_project'
+                }
+            }
+        }
+
         stage("create docker image") {
             steps {
                 echo " ============== start building image =================="
